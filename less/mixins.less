@@ -1,1 +1,17 @@
 // Mixins in here
+.color-btn() {
+  background-color: @button-bg;
+  color: @main-bg;
+
+  &:hover {
+    background-color: @main-bg;
+    color: @button-bg;
+  }
+}
+.center-all() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@phone: ~"(max-width: 500px)";
